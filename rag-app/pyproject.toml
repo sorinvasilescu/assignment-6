@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "rag-app"
+version = "0.1.0"
+description = "A simple rag application to help AI engineers in training on Oxford's GenAI, Cloud and MLOps course."
+authors = ["Andrew P. McMahon"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.0"
+uvicorn = "^0.30.6"
+sentence-transformers = "^3.1.1"
+python-dotenv = "^1.0.1"
+psycopg2 = "^2.9.9"
+llama-index = "^0.11.16"
+boto3 = "^1.35.36"
+pyyaml = "^6.0.2"
+pydantic-settings = "^2.6.0"
+tracely = "^0.1.3"
+trulens = "^1.2.4"
+opik = "^1.0.4"
+pytest-asyncio = "^0.24.0"
+streamlit = "^1.42.0"
+pytest-cov = "^6.0.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.7"
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+pre-commit = "^4.0.1"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

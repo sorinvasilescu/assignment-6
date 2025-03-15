@@ -1,0 +1,22 @@
+retrieval:
+  top_k: 5 # Number of documents to retrieve
+  re_rank: false  # Re-rank documents after retrieval
+
+query_expansion:
+  enabled: true
+  method: "llm"  # Options: "llm", "synonym", "embedding"
+  max_expansion_terms: 3
+
+summarization:
+  enabled: false
+  method: "density"  # Options: "density", "standard"
+  max_iterations: 2
+
+generation:
+  model: "tinyllama"
+  #max_tokens: 150
+  temperature: 0.7
+
+# agentic_rag:
+#   depth: 3  # Depth of decision-making for agentic RAG
+#   retry_limit: 2
