@@ -1,4 +1,4 @@
-To be Updated for our needs later :) 
+To be Updated for our needs later
 
 # _Artificial Intelligence: Generative AI, Cloud and MLOps (online), University of Oxford_: LLMOps Project
 ## Introduction and Background
