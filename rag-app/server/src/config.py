@@ -6,6 +6,7 @@ class Settings(BaseSettings):
     environment: str = Field(..., env="ENVIRONMENT")
     app_name: str = Field(..., env="APP_NAME")
     debug: bool = Field(..., env="DEBUG")
+    llm_provider: str = Field(..., env="LLM_PROVIDER")
 
     # database config
     # database_url: str = Field(..., env="DATABASE_URL")
